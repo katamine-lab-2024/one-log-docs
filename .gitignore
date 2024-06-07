@@ -1,0 +1,10 @@
+# files
+**/.DS_Store
+*.dvi
+*.synctex.gz
+*.aux
+*.log
+*.gz
+*.toc
+
+*/out/sections
