@@ -1,0 +1,55 @@
+\documentclass[a4paper,10pt,titlepage]{jreport}
+
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{here}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{longtable}
+
+\lstset{
+    basicstyle={\ttfamily},
+    identifierstyle={\small},
+    commentstyle={\small},
+    keywordstyle={\small\bfseries},
+    ndkeywordstyle={\small},
+    stringstyle={\small\ttfamily},
+    frame={tb},
+    breaklines=true,
+    columns=fixed,
+    basewidth=0.465em,
+    numbers=left,
+    numberstyle={\scriptsize},
+    lineskip=-0.5ex
+}
+
+\begin{document}
+
+\title{One Touch Log 要求定義書}
+\author{高橋龍馬, 中村優希}
+\date{\today}
+\maketitle
+
+\section*{変更履歴}
+
+\begin{longtable}[c]{|c|c|c|}
+    \hline
+        Ver. & 更新日 & 内容 \\
+    \hline
+    \endfirsthead
+    \hline
+        0.0.1 & 2024/06/26 & 叩き台作成 \\
+    \hline
+\end{longtable}
+
+\newpage
+
+\tableofcontents
+\clearpage
+
+\include{sections/1-process}
+
+\end{document}
