@@ -1,15 +1,72 @@
-\section{システム要件} \label{sec:system}
+\section{要件定義} \label{sec:systema}
 
-\subsection{システム構成}
+\subsection{用語定義}
 
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|c|c|}
+  \hline
+    用語 & 定義 \\
+  \hline
+
+  \hline
+    作業 & ユーザーが行う記録対象の活動 \\
+  \hline
+    ユーザー & 作業を行う人であり、本システムを操作するユーザ \\
+  \hline
+    ログ & データ要件と同様の内容を含む対象 \\
+  \hline
+    レポート & ログをまとめ、振り返るもの。デイリー / 週間 / 月間 / カテゴリ \\
+  \hline
+    カテゴリ & ログを分別する、ユーザーが作成できる \\
+  \hline
+    リマインド &  \\
+  \hline
+    エクスポート & ユーザーがレポート(ログ情報)を出力すること \\
+  \hline
+  \end{tabular}
+  \label{table:test1}
+\end{table}
 
 \subsection{機能要件}
 
+\begin{itemize}
+  \item ログをとる機能
+  \item ログを編集・削除する機能
+  \item ログの計測開始をワンタッチでできる機能
+  \item ログ計測の開始と終了のリマインド機能
+  \item リマインドを設定できる機能
+  \item ログを閲覧できる機能
+  \item ログのグラフ化
+  \item ログのカテゴライズ
+  \item 週間、月間での比較について、ホバーしたらその日の平均の達成度を表示する
+  \item カレンダーで達成度の可視化
+  \item 週次、月次、カテゴリ別の記録を表示
+  \item レポートにてログ情報のエクスポート
+  \item アカウント管理
+\end{itemize}
 
 \subsection{データ要件}
 
+ログ
+\begin{itemize}
+  \item 作業開始時刻
+  \item 作業終了時刻
+  \item タイトル
+  \item 中断開始時刻・終了時刻
+  \item コメント
+  \item カテゴリ
+  \item 達成度
+\end{itemize}
 
-\subsection{非機能要件}
+\subsection{技術要件}
 
+フロントエンド: Electron(React, TypeScript)
 
-\subsection{インフラ要件}
+バックエンド: FastAPI
+
+DB: MySQL
+
+デザイン: Figma
+
+デプロイ: Azure, Docker
